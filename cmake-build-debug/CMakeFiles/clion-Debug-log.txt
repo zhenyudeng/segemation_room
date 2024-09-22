@@ -1,0 +1,40 @@
+/home/dzy/clion-2024.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/dzy/clion-2024.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/dzy/project/segmentroomtest-debug2 -B /home/dzy/project/segmentroomtest-debug2/cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- DBG_FLAGS: -O0 -g3 -gdwarf-2
+-- MCU_FLAGS: 
+-- SEC_FLAGS: 
+-- Found OpenCV: /opt/ros/kinetic (found version "3.3.1")
+-- OpenCV_INCLUDE_DIRS=/opt/ros/kinetic/include/opencv-3.3.1-dev/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv
+-- OpenCV_LIBRARIES=opencv_calib3dopencv_coreopencv_dnnopencv_features2dopencv_flannopencv_highguiopencv_imgcodecsopencv_imgprocopencv_mlopencv_objdetectopencv_photoopencv_shapeopencv_stitchingopencv_superresopencv_videoopencv_videoioopencv_videostabopencv_vizopencv_arucoopencv_bgsegmopencv_bioinspiredopencv_ccalibopencv_cvvopencv_datasetsopencv_dpmopencv_faceopencv_fuzzyopencv_hdfopencv_img_hashopencv_line_descriptoropencv_optflowopencv_phase_unwrappingopencv_plotopencv_regopencv_rgbdopencv_saliencyopencv_stereoopencv_structured_lightopencv_surface_matchingopencv_textopencv_trackingopencv_xfeatures2dopencv_ximgprocopencv_xobjdetectopencv_xphoto
+-- Configuring done (4.8s)
+CMake Warning (dev) at CMakeLists.txt:42 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/dzy/project/segmentroomtest-debug2/ipa_room_segmentation/abstract_voronoi_segmentation.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dzy/project/segmentroomtest-debug2/cmake-build-debug

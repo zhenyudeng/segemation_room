@@ -1,0 +1,30 @@
+﻿
+# the name of the target operating system
+set(CMAKE_SYSTEM_NAME   Linux)
+set(CMAKE_SYSTEM_VERSION  1)
+set(CMAKE_SYSTEM_PROCESSOR  aarch64)
+set(CROSS_COMPILE_PREFIX aarch64-linux-gnu)
+#set(NATIVE_SYSROOT "/opt/rk3308/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin")
+#set(CMAKE_PROGRAM_PATH "${NATIVE_SYSROOT}")
+# specify the cross compiler
+set(CMAKE_C_COMPILER ${CROSS_COMPILE_PREFIX}-gcc)
+set(CMAKE_CXX_COMPILER ${CROSS_COMPILE_PREFIX}-g++)
+set(CMAKE_ASM_COMPILER ${CROSS_COMPILE_PREFIX}-as)
+set(CMAKE_Fortran_COMPILER  ${CROSS_COMPILE_PREFIX}-gfortran)
+
+set(CMAKE_OBJCOPY ${CROSS_COMPILE_PREFIX}-objcopy)
+set(CMAKE_OBJDUMP ${CROSS_COMPILE_PREFIX}-objdump)
+
+# find additional toolchain executables
+#find_program(ARM_SIZE_EXECUTABLE ${CROSS_COMPILE_PREFIX}-size)
+#find_program(ARM_GDB_EXECUTABLE ${CROSS_COMPILE_PREFIX}-gdb)
+#find_program(ARM_OBJCOPY_EXECUTABLE ${CROSS_COMPILE_PREFIX}-objcopy)
+#find_program(ARM_OBJDUMP_EXECUTABLE ${CROSS_COMPILE_PREFIX}-objdump)
+
+#set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+# search for program/library/include in the build host directories
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)

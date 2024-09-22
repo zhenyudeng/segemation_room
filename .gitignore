@@ -1,0 +1,12 @@
+*.autosave
+bin
+obj
+
+build
+build-*
+CMakeLists.txt.user
+.vscode/
+wifi/tuya/tuya_db
+wifi/tuya_node_rev/tuya_db/
+wifi/tuya_node_rev/tuya_db/tuya_enckey.db
+wifi/tuya_node_rev/tuya_db/tuya_user.db
